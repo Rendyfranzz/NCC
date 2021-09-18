@@ -35,6 +35,10 @@ if(!$db_connection){
         <a href="index.php">Home</a>
         <a class="active" href="karakter_.php">Character</a>
     </nav>
+    <script type="text/javascript" src="script.js"></script>
+    <div class="pencarian">
+            <input type="text" id="cari" onkeyup="search()" placeholder="cari karakter">
+        </div>
     </header>
     
     <div>
@@ -130,4 +134,6 @@ if(!$db_connection){
            time.textContent = hours + ":" + minutes + ":" + seconds + " "+ day_night;
          });
       </script>
+
+      
 
