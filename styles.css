@@ -1,0 +1,192 @@
+:root{
+    --blue:#1f3378;
+    --black:#080a10;
+    --light-color:rgb(202, 193, 193);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image:url(background.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+footer{
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    background: transparent;
+    padding: 100px 0 30px;
+    border-top-left-radius: 120px;
+    font-size: 14px;
+    line-height: 20px;
+    color: white;
+}
+.row{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.kolom{
+    flex-basis: 25%;
+    padding: 10px;
+}
+.logo{
+    width: 80px;
+    margin-bottom: 30px;
+}
+
+.kolom h3{
+    width: fit-content;
+    margin-bottom: 40px;
+    position: relative;
+}
+.email-id{
+    width: fit-content;
+    border-bottom: 2px solid #ccc;
+    margin: 20px 0;
+}
+ul li{
+    list-style: none;
+    margin-bottom: 12px;
+}
+ul li a{
+    text-decoration: none;
+    color: white;
+}
+form{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    border-bottom: 1px solid #ccc;
+}
+form .far{
+    font-size: 20px;
+    margin-right: 10px;
+}
+form input{
+    width: 100%;
+    background-color: transparent;
+    color: white;
+    border: 0;
+    outline: none;
+}
+form button{
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    background: transparent;
+}
+form button .fas{
+    color: white;
+    font-size: 16px;
+}
+.sosmed .fab{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    line-height: 40px;
+    text-align: center;
+    font-size: 20px;
+    background: white;
+    color: var(--black);
+    cursor: pointer;
+    margin-right: 15px;
+}
+hr{
+    width: 90%;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+    margin: 20px auto;
+}
+.buatan{
+    text-align: center;
+}
+ header{
+    position: relative;
+    width: 100%;
+    top:0; left: 0; right:0;
+    background: transparent;
+    padding:1rem 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo img{
+    height: 100px;
+    width: 210px;
+    border-radius: 30px;
+}
+header .navbar a{
+    font-size: large;
+    border-radius: 10px;
+    padding:10px 30px;
+    color:var(--black);
+}
+header .navbar a.active,
+header .navbar a:hover{
+    color:#fff;
+    background: var(--blue);
+}
+.konten{
+    position: relative;
+    width: 80%;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background:transparent;
+    display: flex;
+    flex-direction: column;
+}
+.konten h1{
+    font-size: 50px;
+    position: relative;
+    animation: gerak 2s linear infinite ;
+}
+@keyframes gerak{
+    0%{
+        opacity: 0%;
+    }
+    50%{
+        opacity: 50%;
+    }
+    100%{
+        opacity: 100%;
+    }
+}
+
+a[class="th"]
+{
+    color : var(--blue);
+}
+.table .th a{
+    color: white;
+    font-size: 20px;
+}
+
+.table, th, td{
+    font-style: italic;
+    font-size: 30px;
+    border: 10px solid black;
+    width:auto;
+    scroll-behavior: auto;
+    background-color:rgba(49, 61, 85, 0.3);
+    border-collapse: separate;
+    border-color:rgb(88, 171, 240);
+    border-width: 5px;
+    table-layout: auto;
+    border-collapse: separate; 
+    color: white;
+    text-align-last: center;
+    margin: auto;
+}
+/* .th{
+    background-color: aquamarine;
+} */
